@@ -2,75 +2,81 @@
 <html>
 <head>
   <title>Nametag Generator</title>
+  <script src="lib/jquery-3.7.1.min.js"></script>
+  <link rel="stylesheet" href="lib/bootstrap.min.css"></link>
+  <script src="lib/bootstrap.bundle.min.js"></script>
+  <script src="medal.js"></script>
   <style>
     * {
       font-family: Arial, serif;
     }
 
     body {
-      padding: 10px;
+      padding: 5px;
+      background-color: #2b2f32;
     }
 
     table {
       text-align: center;
     }
+
+    .form-inline .form-control {
+      width: auto;
+    }
+
+    .table tbody tr td, .table thead tr th {
+      padding: 0.25rem;
+    }
   </style>
-  <script src="jquery-3.7.1.min.js"></script>
-  <script>
-    function S(H,k){const G=p();return S=function(U,P){U=U-0xb3;let n=G[U];return n;},S(H,k);}function p(){const pd=['canvas[name=\x27c\x27]','ajax','width','medalText','5984284jKMwJk','each','data:image/png;base64,','39884139pnaMym','drawImage','7807005wRITXj','yWLMw','2710936JijVMe','includes','#nameTag','3484899TPUUHR','GET','medal.xml','onerror','append','rgba(','height','12.5px\x20\x22Arial\x22,\x20serif','basedata','fillStyle','xml','src','show','canvas[name=\x27e\x27]','font','</td>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<td>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<img\x20src=\x22','QRWDl','attr','name',')</td>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<td>(','\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<tr>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<td>','#main','search','28HxBXPP','2389572cbSOTv','ceil','find','get','idEKS','max','log','measureText','2lVwwPF','value','int[name=\x27clr\x27]','onload','164577qhVWBu','location'];p=function(){return pd;};return p();}(function(H,k){const pE=S,G=H();while(!![]){try{const U=parseInt(pE(0xe4))/0x1+-parseInt(pE(0xe0))/0x2*(-parseInt(pE(0xc0))/0x3)+-parseInt(pE(0xb6))/0x4+-parseInt(pE(0xbb))/0x5+-parseInt(pE(0xd8))/0x6+-parseInt(pE(0xd7))/0x7*(parseInt(pE(0xbd))/0x8)+parseInt(pE(0xb9))/0x9;if(U===k)break;else G['push'](G['shift']());}catch(P){G['push'](G['shift']());}}}(p,0xe7193));function parseXML(H,k){const pa=S,G=H,U=pa(0xc2);G('#main')['html'](''),G[pa(0xb3)]({'type':pa(0xc1),'url':U,'async':![],'dataType':pa(0xca),'success':n=>{const pD=pa;if(pD(0xdc)!==pD(0xdc))return new U((C,O)=>{const pl=pD,u=new i();u[pl(0xe3)]=()=>C(u),u[pl(0xc3)]=O,u[pl(0xcb)]=pl(0xb8)+x;});else{const x=G(n);console[pD(0xde)](x),x['find']('imgdir[name=\x27medal\x27]\x20imgdir')['sort']((f,v)=>{const pg=pD;return pg(0xd0)==='QRWDl'?Number(G(f)[pg(0xd1)](pg(0xd2)))-Number(G(v)['attr'](pg(0xd2))):i(x(f)[pg(0xd1)](pg(0xd2)))-v(s(C)[pg(0xd1)](pg(0xd2)));})[pD(0xb7)]((f,v)=>{const pQ=pD,s=Number(G(v)[pQ(0xd1)](pQ(0xd2))),C=G(v)[pQ(0xda)]('canvas[name=\x27w\x27]')['attr']('basedata'),O=G(v)[pQ(0xda)](pQ(0xe6))[pQ(0xd1)](pQ(0xc8)),u=G(v)['find'](pQ(0xcd))[pQ(0xd1)](pQ(0xc8)),K=Number(G(v)[pQ(0xda)](pQ(0xe2))[pQ(0xd1)](pQ(0xe1))),y=G(pQ(0xbf))[pQ(0xdb)](0x0),m=y['getContext']('2d'),I=pQ(0xc7),r=0x5;m[pQ(0xce)]=I;const q=m[pQ(0xdf)](k)[pQ(0xb4)]+r*0x2,J=L=>{return new Promise((t,X)=>{const pR=S,z=new Image();z[pR(0xe3)]=()=>t(z),z[pR(0xc3)]=X,z[pR(0xcb)]='data:image/png;base64,'+L;});};Promise['all']([J(C),J(O),J(u)])['then'](([L,t,X])=>{const pZ=pQ,z=Math[pZ(0xd9)](q/t[pZ(0xb4)]),N=L['width']+t[pZ(0xb4)]*z+X['width'];y[pZ(0xb4)]=N,y[pZ(0xc6)]=Math[pZ(0xdd)](L[pZ(0xc6)],t[pZ(0xc6)],X[pZ(0xc6)]);let j=0x0;m['drawImage'](L,j,0x0),j+=L['width'];for(let D=0x0;D<z;D++){m['drawImage'](t,j,0x0),j+=t[pZ(0xb4)];}m[pZ(0xba)](X,j,0x0);const E=(N-q)/0x2+r,a=y[pZ(0xc6)]/0x2+0x4;m[pZ(0xce)]=I,m[pZ(0xc9)]=P(K),m['fillText'](k,E,a),G(pZ(0xd5))[pZ(0xc4)](pZ(0xd4)+s+pZ(0xcf)+y['toDataURL']()+'\x22></img>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</td>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<td>('+L[pZ(0xb4)]+',\x20'+L[pZ(0xc6)]+pZ(0xd3)+t[pZ(0xb4)]+',\x20'+t['height']+pZ(0xd3)+X[pZ(0xb4)]+',\x20'+X[pZ(0xc6)]+')</td>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</tr>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20');});});}}});function P(n){const pc=pa,i=n>>>0x0,x=i>>0x18&0xff,f=i>>0x10&0xff,v=i>>0x8&0xff,s=i&0xff,C=x/0xff;return pc(0xc5)+f+',\x20'+v+',\x20'+s+',\x20'+C+')';}}$(function(){const pB=S;if(!window['location'][pB(0xd6)][pB(0xbe)](pB(0xb5))){if('UYhZr'!==pB(0xbc))return;else return;}const H=new URLSearchParams(window[pB(0xe5)][pB(0xd6)])[pB(0xdb)]('medalText');$('#medalText')['val'](H),$('#header')[pB(0xcc)](),parseXML($,H);});
-  </script>
 </head>
 <body>
-<h1>Medal Text Preview</h1>
-<h3>This is a very lazy tool created by Capu. Please forgive the webpage appearance.</h3>
-<form>
+<div class="container bg-dark">
+  <h1 class="my-4 text-white">Medal Text Preview</h1>
+  <h3 class="text-secondary mb-4 text-white">This is a very lazy tool created by Capu. Please forgive the webpage appearance.</h3>
+  <form class="mb-4">
+    <div class="row g-2">
+      <div class="col-auto">
+        <label for="medalText" class="visually-hidden">Enter the text you want to preview on the medal:</label>
+        <input type="text" id="medalText" name="medalText" class="form-control" placeholder="Medal Text">
+      </div>
+      <div class="col-auto">
+        <button type="submit" class="btn btn-primary">Go!</button>
+      </div>
+    </div>
+  </form>
   <div>
-    Enter the text you want to preview on the medal.
+    <p>Please note:</p>
+    <ul class="list-group mb-4">
+      <li class="bg-dark-subtle list-group-item">Some medal previews will appear misaligned here. They will be fixed in game to look as
+        they are intended.
+      </li>
+      <li class="bg-dark-subtle list-group-item">For medals that do not display properly, you can request for a preview of the proper
+        appearance.
+      </li>
+      <li class="bg-dark-subtle list-group-item"><span class="text-danger">Not all medal IDs are available</span> - some are already
+        used for other custom medals or reserved for future content.
+      </li>
+      <li class="bg-dark-subtle list-group-item">Once you've decided on your custom medal, please DM me (Capu) on Discord with a
+        <strong>screenshot of the whole row</strong>.
+      </li>
+      <li class="bg-dark-subtle list-group-item">Ignore the "w", "c", "e" columns - these are just for my own reference.</li>
+      <li class="bg-dark-subtle list-group-item">I'll let you know if the medal you selected is available!</li>
+    </ul>
   </div>
-  <label>
-    <input type="text" id="medalText" name="medalText" placeholder="Medal Text"/>
-  </label>
-  <button type="submit">Go!</button>
-</form>
-<br><br>
-<div>
-  Please note:
-  <ul>
-    <li>
-      Some medal previews will appear misaligned here. They will be fixed in game to look as they are intended.
-    </li>
-    <li>
-      For medals that do not display properly, you can request for a preview of the proper appearance.
-    </li>
-    <li>
-      <span style="color: red">Not all medal IDs are available</span> - some are already used for other custom medals or
-      reserved for future content.
-    </li>
-    <li>
-      Once you've decided on your custom medal, please DM me (Capu) on Discord with the ID and medal text.
-    </li>
-    <li>
-      Ignore the "w", "c", "e" columns - these are just for my own reference
-    </li>
-    <li>
-      I'll let you know if the medal you selected is available!
-    </li>
-  </ul>
+  <table class="table table-striped">
+    <thead id="header" style="display:none">
+    <tr>
+      <th>ID</th>
+      <th>Preview</th>
+      <th>w</th>
+      <th>c</th>
+      <th>e</th>
+    </tr>
+    </thead>
+    <tbody id="main">
+    </tbody>
+  </table>
+  <canvas id="nameTag" style="display:none"></canvas>
 </div>
-<br><br>
-<table>
-  <thead id="header" style="display:none">
-  <tr>
-    <th>ID</th>
-    <th>Preview</th>
-    <th>w</th>
-    <th>c</th>
-    <th>e</th>
-  </tr>
-  </thead>
-  <tbody id="main">
-  </tbody>
-</table>
-<canvas id="nameTag" style="display:none"></canvas>
 </body>
 </html>
